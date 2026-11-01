@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { DownloadIcon, MenuIcon } from 'lucide-react';
-import { Button, Drawer, DrawerClose, GithubIcon, LinkedInIcon } from '@salman8797/component-library';
+import { Button, Drawer, DrawerClose, GithubIcon, LinkedinIcon } from '@salman8797/component-library';
 import { cn, focusRing } from '@salman8797/component-library/utils';
 
 import { navItems, site, type NavId } from '@/content/site';
@@ -43,13 +43,13 @@ export function MobileMenu({ active, triggerClassName }: MobileMenuProps) {
           <div className="grid grid-cols-2 gap-2">
             <Button asChild variant="outline" className="h-11 bg-transparent">
               <a href={site.github}>
-                <GithubIcon aria-hidden />
+                <GithubIcon size={16} />
                 GitHub
               </a>
             </Button>
             <Button asChild variant="outline" className="h-11 bg-transparent">
               <a href={site.linkedin}>
-                <LinkedInIcon aria-hidden />
+                <LinkedinIcon size={16} />
                 LinkedIn
               </a>
             </Button>
